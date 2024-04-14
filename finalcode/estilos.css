@@ -1,96 +1,108 @@
 /*Fondo de la página*/
 body{
+    margin: 0;
     background-color: aquamarine;
     
 }
 
 /*TituloPethouse*/
-h1 {margin: 0%;
-    border: 1px;
-    border-color: green;
-    border-style: dotted;
+h1 {margin-top: -10px;
     background-color: yellow;
-    border-width: 2px;
     width: 100%;
     height: 100px;
     text-align: center;
     }
-/*Ponte en contácto. Acá lo puedes hacer*/
-header {
-border-color: purple;
-border-style: solid;
-border: 1px;
-text-align: center;
-justify-content: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 30px;
-font-weight: 22%;
-width: 100%;
-height: 100%;
-background-color: blue;
 
-}
 /*Menu*/
-nav{    
-    border: 20px;
-    border-color: green;
+nav{
     width: 100%;
-    height: 400%;
+    height: 35px;
     background-color: red;
-    margin-top: 0px;}
+    margin-top: -10px;
+    margin-bottom: 40px;}
 .menu{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-style: italic;
+    text-align: justify;
     color: aqua;
-}
+    padding: 10px;
+    }
+
+    /*Ponte en contácto. Acá lo puedes hacer*/
+header {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 22%;
+    width: 98%;
+    height: 70%;
+    background-color: blue;
+    margin-top: -30px;
+    margin-left: 1%;
+    }
 
 
 /*Informacion de contacto*/
 aside{
-    border: 5px;
-    border-color: blue;
-    border-style: solid;
+    background-color: purple;
     width: 29%;
-    height: 400px;
-
-}
+    height: 450px;
+    margin-left: 6px;
+    margin-top: -10px;
+    }
 .contacto{
-    border: 2px;
-    border-color: pink;
-    border-style: dashed;
     background-color: brown;
+    height: 100%;
+    width: 100%;
+    }
+div{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    }
+
+h4{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-
+/*Correo Electronico y Formulario*/
 main{
-    border: 4px;
+    border: 1px;
     border-color: green;
     border-style: solid;
-    background-color: salmon;
-    width: 65%;
-    padding: 2% 2% 2% 2%;
-    margin: -8% 0 0 30%;
+    background-color: brown;
+    width: 67.4%;
+    height: 430px;
+    margin-top: -32%;
+    margin-left: 32%;
+    margin-bottom: -1%;
+    
     
     
 }
 .contactoCorreo{
-    border: 3px;
-    border-color: blue;
-    border-style: groove;
-    background-color: palegreen;
-    box-sizing: border-box;
-    padding: 1% 1% 2% 1%;
-    margin: -3% 0 0 0%;
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    margin-top: -41.9px;
+    margin-left: -20px;
+    text-align: justify;
     }
-
+h5, form{
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
 /*Pie de pagina*/
 footer{
+    margin-bottom: -20px;
     width: 100%;
     height: 100%;
     background-color: white;
-    border: 4px;
-    border-style: dashed;
-    border-color: black;
+    }
+.pie{
+    text-align: center;
 }
