@@ -36,7 +36,7 @@ $apellido.addEventListener('input', (evento) => {
 
 $botonEnviar.addEventListener('click', (evento) => {
     evento.preventDefault();
-    if(nombre != null && apellido != null && telefono != null && email != null && comentario != null){
+    if(nombre && apellido && telefono && email && comentario){
         alert("Sus datos han sido obtenidos correctamente");
     }else{
         alert("Rellene todos la campos del formulario, por favor");
