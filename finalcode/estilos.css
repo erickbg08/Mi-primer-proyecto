@@ -1,26 +1,121 @@
 /*Fondo de la página*/
 body{
     margin: 0;
-    background-color: #E6CB55;
+    background-color: white;
     
 }
 
-/*TituloPethouse*/
-h1 {margin-top: -10px;
-    background-color: #c09b7d;
-    width: 100%;
-    height: 100px;
-    text-align: center;
+/*Menu*/
+.header {
+    background: #E6CB55;
+    color: rgb(9, 9, 9);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 160px;
+    display: flex;
+    z-index: 100;
     
+ }
+.header .titulo {
+    color: #451d22;
+ }
+ .pethouse{
+   font-size: 50px;
+ }
+ 
+.header a {
+    color: #b9a1a4;
+    text-decoration: none;
+ }
+.nav-img{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 32px;
+ }
+ 
+input:checked + nav {
+    width: 110%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color:#b39a86;
+    transform: translateY(0);
+    position:absolute;
+    margin-top: 100px;
+    font-size: 20px;
+    height: auto;
+   }
+   .botonhamburquesa{
+      font-size: 38px;
+      margin: 20px;
+    
+    
+ }
+  
+ .deisy {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    }
+  .deisy1 {
+     position: absolute;
+     top: 15px;
+     right: 30px;
+     width: 40px;
+     height: 20px;
+     display: none;
+     z-index: 2;
+    }
+  nav {
+   position: absolute;
+   transform: translateY(-100%);
+   transition: all 1000ms ease-in-out;
+   display:none ;
+   left: 0;
+   height: 45px;
+   
+ }
+ .container-nav {
+   display: flex;
+   justify-content: right;
+  
+}
+ .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+ }
+ .navigation ul li {
+    display: inline-block;
+    letter-spacing: 0, 40px;
+    margin: 3px;
+ }
+ 
+ .navigation ul li a {
+    display: block;
+    padding-left: 0, 2rem, 1rem;
+    transition: all 0.4s linear;
+    color: #451d22  ;
+ }
+ .navigation ul li a:hover {
+    background:#dbd9d2; 
     }
 
-/*Menu*/
-nav{
-    width: 100%;
-    height: 35px;
-    background-color: #E1BD41;
-    margin-top: -10px;
-    margin-bottom: 40px;}
 .menu{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -30,19 +125,12 @@ nav{
     padding: 10px;
     }
 
-    /*Ponte en contácto. Acá lo puedes hacer*/
-header {
-    text-align: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    font-weight: 22%;
-    width: 98%;
-    height: 70%;
-    background-color: #E19249;
-    margin-top: -30px;
-    margin-left: 1%;
+.logo{
+    padding-left: 43%;
+    padding-top: -50px;
     }
+
+
 
 
 /*Informacion de contacto*/
@@ -51,10 +139,10 @@ aside{
     width: 29%;
     height: 450px;
     margin-left: 6px;
-    margin-top: -10px;
+    margin-top: 15%;
     }
 .contacto{
-    background-color: #E1754C;
+    background-color: #E19249;
     height: 100%;
     width: 100%;
     }
@@ -98,13 +186,102 @@ h5, form{
 }
 
 /*Pie de pagina*/
-footer{
-    margin-bottom: -20px;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    }
-.pie{
-    text-align: center;
-    background-color: #E6871F;
+:root {
+    font-family: "Fira Sans" sans-serif;
 }
+
+footer{
+    background-color: #E6CB55;
+    color: #451d22;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+footer h4{
+    margin-bottom: 30px;
+}
+.footer-links a{
+    color: #451d22;
+    text-decoration: none;
+    padding-bottom: 200px;
+}
+.containerfooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+}
+.containerfooter div{
+    height: 300px;
+    
+}
+.logofooter{
+    display: flex;
+    align-items:center;
+
+}
+.logofooter img{
+width: 190px;
+height: 190px;
+
+}
+.redessociales{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.redessociales a{
+color: #451d22;
+font-size: 24px;
+transition:color 0.3s ease;
+text-decoration: none;
+}
+.redessociales a img{
+    width: 40px;
+    height: 40px;
+}
+.redessociales a:hover, .footer-links a:hover{
+    color: #b9a1a4;
+}
+.copyright{
+    text-align: center;
+}   
+@media (max-width:767px) and (min-width:260px) {
+.containerfooter {
+        flex-direction: column;
+        gap:40px;
+    }
+.containerfooter h4{
+        font-size: 15px;
+    }
+.footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-wrap: pretty;
+        align-items: center;
+    }
+.footer-links h4{
+        width:60%;
+        text-align: center;
+    }
+.logofooter img{
+        width: 100px;
+        height: 100px;
+    }
+.containerfooter div{
+        height: auto;
+    }
+    }
+
+
+
+/*TituloPethouse
+h1 {margin-top: -10px;
+    background-color: #c09b7d;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    }*/
